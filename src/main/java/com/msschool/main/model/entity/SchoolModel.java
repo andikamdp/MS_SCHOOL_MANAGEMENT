@@ -1,8 +1,12 @@
 package com.msschool.main.model.entity;
 
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Index;
+import jakarta.persistence.Table;
 import lombok.Data;
+import org.springframework.data.annotation.Id;
 
-import javax.persistence.*;
 import java.util.Date;
 
 @Table(schema = "MS_SCHOOL", name = "TB_SCHOOL_TM", indexes = {@Index(columnList = "name")})
